@@ -1,0 +1,97 @@
+ <h5>Welcome To Patil Travels</h5>
+ <span class="changecontent"></span>
+
+ @keyframes changetext{
+    0%{content: "Maharashtra";}
+    10%{content: "Gujrat";}
+    20%{content: "Delhi";}
+    30%{content: "Himachal Pradesh";}
+    40%{content: "Karnataka";}
+    50%{content: "Uttarakhand";}
+    60%{content: "Jammu Kashmir";}
+    70%{content: "Goa";}
+    80%{content: "Punjab";}
+    90%{content: "Meghalaya";}
+    100%{content: "Kerla";}
+} 
+
+}
+.changecontent::after{
+    content: ' ';
+    color: yellow;
+    text-shadow: 0px 5px 5px black;
+    animation: changetext 10s infinite linear;
+    font-family: 'Young Serif', serif;
+}
+
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+    
+}
+
+
+.gallary .card img:hover{
+    transform: scale(1.1);
+
+    @media (max-width:765px){
+        .about{
+            padding: 0;
+        }
+    }
+
+    #logo span{
+        color: #ffa500;
+    }
+
+    #logo{
+        font-size: 36px;
+        font-weight: 550;
+        
+        text-shadow: 0px 1px 1px red;
+        margin-bottom: 5px;
+    }
+
+    .home .content h5{
+        color: rgb(0, 0, 0);
+        font-size: 38px;
+        font-weight: 550;
+        font-family: 'Young Serif', serif;
+        text-shadow: 0px 3px 3px rgb(255, 255, 255);
+    }
+
+    .changecontent::after{
+        content: ' ';
+        color: yellow;
+        text-shadow: 0px 5px 5px black;
+        animation: changetext 10s infinite linear;
+        font-family: 'Young Serif', serif;
+    }
+
+    @media (max-width:850px){
+        .home{
+            background-position: 50%;
+        }
+    }
+    @media (max-width:450px){
+        
+        .home .content h1{
+            font-size: 38px;
+        }
+        .home .content p{
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width:765px){
+        .book{
+            padding: 0;
+        }
+        .main-text h1{
+            padding: 20px;
+        }
+    }
+
+    .book .submit:hover{
+        width: 170px;
+    }
